@@ -2,3 +2,9 @@
   font-family: sans-serif;
   text-align: center;
 }
+#stve {
+  margin: 0.35rem;
+  box-sizing: border-box;
+  padding: 1rem, 1rem;
+  width: 20%;
+}
