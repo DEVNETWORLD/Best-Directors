@@ -1,10 +1,10 @@
 import "./styles.css";
 import React, { useState } from "react";
 var directorList = {
-  "Steven Spielberg": "Scheindler's List",
-  "James Cameron": "Titanic",
-  "Quentein Tarantino": "Pulp Fiction",
-  "Cristopher Nolan": "Prestige"
+  "Steven Spielberg ": "Scheindler's List",
+  "James Cameron ": "Titanic",
+  "Quentein Tarantino ": "Pulp Fiction",
+  "Cristopher Nolan ": "Prestige"
 };
 var currentList = Object.keys(directorList);
 
@@ -20,15 +20,15 @@ export default function App() {
       <p>Mine all time favourite</p>
       {currentList.map(function (movie) {
         return (
-          <span
+          <button
             style={{
               border: "1px solid var",
               backgroundColor: "yellow",
               fontSize: "1rem",
-              paddingRight: "0.5rem",
+              paddingRight: "1rem",
               paddingLeft: "0.5rem",
-              paddingTop: "1rem",
-              paddingBottom: "1rem",
+              paddingTop: "0.5rem",
+              paddingBottom: "0.5rem",
 
               cursor: "pointer"
             }}
@@ -36,7 +36,7 @@ export default function App() {
             onClick={() => clickdirectorHanler(movie)}
           >
             {movie}
-          </span>
+          </button>
         );
       })}
       <h2 style={{ font: "bold" }}>{movies}</h2>
