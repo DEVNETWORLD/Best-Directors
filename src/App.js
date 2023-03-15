@@ -25,11 +25,12 @@ export default function App() {
               border: "1px solid var",
               backgroundColor: "yellow",
               fontSize: "1rem",
-              paddingRight: "1rem",
+              paddingRight: "0.5rem",
               paddingLeft: "0.5rem",
               paddingTop: "0.5rem",
               paddingBottom: "0.5rem",
-
+              margin: "1rem 0.4rem",
+              borderRadius: "0.25rem",
               cursor: "pointer"
             }}
             key={movie}
