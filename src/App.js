@@ -22,19 +22,19 @@ const directorList = {
     { movies: "Dunkirk", rating: "4.9/5" }
   ]
 };
-//var currentList = Object.keys(directorList);
+var currentList = Object.keys(directorList);
 
 export default function App() {
-  const [moviess, setmovies] = useState("StevenSpielberg");
+  const [movies, setmovies] = useState("StevenSpielberg");
   function clickdirectorHanler(movie) {
-    //var movies = directorList[movie];
+    var movies = directorList[movie];
     setmovies(movie);
   }
   return (
     <div className="App">
       <h1>Rating Best Directors works</h1>
       <p>Mine all time favourite</p>
-      {Object.keys(directorList).map((movie) => (
+      {currentList.map((movie) => (
         <button
           style={{
             border: "1px solid var",
@@ -56,13 +56,13 @@ export default function App() {
       ))}
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
-          {directorList[moviess].map((item) => (
+          {directorList[movies].map((item) => (
             <li
               key={item.movies}
               style={{
                 listStyle: "none",
                 padding: "1rem",
-                border: "1px solid #F87171",
+                border: "1px solid ",
                 width: "50%",
                 margin: "1rem auto",
                 borderRadius: "0.5rem"
